@@ -6,7 +6,7 @@
 
 ## Inhaltsverzeichnis
 
-1. [Terminal-Befehle zum Ausprobieren](#terminal-befehle)
+1. [Terminal-Befehle zum Ausprobieren](#terminal-befehle-zum-ausprobieren-terminal-befehle)
 2. [Code-Beispiele zum Nachbauen](#code-beispiele)
 3. [HTML Cheat Sheet](#html-cheat-sheet)
 4. [CSS Cheat Sheet](#css-cheat-sheet)
@@ -15,7 +15,7 @@
 
 ---
 
-## Terminal-Befehle zum Ausprobieren {#terminal-befehle}
+## Terminal-Befehle zum Ausprobieren
 
 ### Grundlegende Netzwerk-Befehle
 
