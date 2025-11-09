@@ -99,6 +99,8 @@ Speichere diese Datei als `index.html`:
 
 ### Stage 2: HTML + CSS (Jetzt wird's schön!)
 
+Speicher den folgenden Code im gleichen Folder wie bereits Deine `index.html` und nenne die Datei `styles.css`.
+
 ```css
 * {
   margin: 0;
