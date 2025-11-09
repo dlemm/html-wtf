@@ -11,7 +11,7 @@
 3. [HTML Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#html-cheat-sheet)
 4. [CSS Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#css-cheat-sheet-css-cheat-sheet)
 5. [JavaScript Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#-javascript-cheat-sheet)
-6. [Lernressourcen](#lernressourcen)
+6. [Lernressourcen](https://github.com/dlemm/html-wtf?tab=readme-ov-file#lernressourcen)
 
 ---
 
