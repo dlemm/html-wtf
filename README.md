@@ -185,6 +185,8 @@ li {
 }
 ```
 
+Füge nun noch in Deiner `index.html` einen Verweis auf die `styles.css` hinzu.
+
 ```html
 <!DOCTYPE html>
 <html lang="de">
@@ -195,11 +197,12 @@ li {
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <img src="https://picsum.photos/800/300" alt="Random" />
     <h1>Willkommen auf meiner Website!</h1>
     <p>Ich bin [DEIN NAME] und das ist meine erste selbstgebaute Seite.</p>
 
     <h2>Über mich</h2>
-    <p>Ich lerne gerade Webentwicklung und es macht richtig Spaß! 🚀</p>
+    <p>Ich lerne gerade Webentwicklung!</p>
 
     <h2>Meine Interessen</h2>
     <ul>
@@ -207,8 +210,6 @@ li {
       <li>Programmieren</li>
       <li>Kreativität</li>
     </ul>
-
-    <img src="https://picsum.photos/400/300" alt="Ein schönes Bild" />
 
     <button>Klick mich!</button>
   </body>
@@ -230,13 +231,14 @@ li {
     <script src="script.js" defer></script>
   </head>
   <body>
+    <img src="https://picsum.photos/800/300" alt="Random" />
     <h1>Willkommen auf meiner Website!</h1>
     <p id="intro">
       Ich bin [DEIN NAME] und das ist meine erste selbstgebaute Seite.
     </p>
 
     <h2>Über mich</h2>
-    <p>Ich lerne gerade Webentwicklung und es macht richtig Spaß! 🚀</p>
+    <p>Ich lerne gerade Webentwicklung!</p>
 
     <h2>Meine Interessen</h2>
     <ul>
@@ -245,8 +247,6 @@ li {
       <li>Kreativität</li>
     </ul>
 
-    <img src="https://picsum.photos/400/300" alt="Ein schönes Bild" />
-
     <h2>Interaktive Features</h2>
     <button onclick="sagHallo()">Sag Hallo! 👋</button>
     <button onclick="changeColor()">Farbe ändern 🎨</button>
@@ -254,12 +254,6 @@ li {
 
     <p id="counter">Geklickt: 0 mal</p>
     <button onclick="countClicks()">Zähler erhöhen ➕</button>
-
-    <script>
-      // === JAVASCRIPT FUNKTIONEN === //
-
-      // Funktion 1: Begrüßung
-    </script>
   </body>
 </html>
 ```
@@ -268,9 +262,9 @@ li {
 function sagHallo() {
   let name = prompt("Wie heißt du?");
   if (name) {
-    alert("🎉 Hallo " + name + "! Willkommen auf meiner Website!");
+    alert("Hey " + name + "! Willkommen auf d/meiner Website!");
     document.getElementById("intro").textContent =
-      "Hallo " + name + "! Schön, dass du hier bist! 😊";
+      "Hallo " + name + "! Schön, dass du hier bist!";
   }
 }
 
@@ -293,7 +287,7 @@ function changeColor() {
 function changeImage() {
   const img = document.querySelector("img");
   const randomId = Math.floor(Math.random() * 1000);
-  img.src = "https://picsum.photos/400/300?random=" + randomId;
+  img.src = "https://picsum.photos/800/300?random=" + randomId;
 }
 
 // Funktion 4: Click-Counter
@@ -305,7 +299,7 @@ function countClicks() {
 
   // Easter Egg bei 10 Klicks
   if (clickCount === 10) {
-    alert("🎊 Wow! Du hast 10 mal geklickt! Du bist ein Klick-Champion!");
+    alert("Wow! Du hast 10 mal geklickt! Du bist ein Klick-Champion!");
   }
 }
 
