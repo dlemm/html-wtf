@@ -220,6 +220,8 @@ Füge nun noch in Deiner `index.html` einen Verweis auf die `styles.css` hinzu.
 
 ### Stage 3: HTML + CSS + JavaScript (Jetzt wird's interaktiv!)
 
+Füge einen Link im `<head>` zu Deiner `script.js` hinzu, die wir gleich erstellen. Füge dann noch die Buttons am Ende der `html` file hinzu.
+ 
 ```html
 <!DOCTYPE html>
 <html lang="de">
@@ -257,6 +259,8 @@ Füge nun noch in Deiner `index.html` einen Verweis auf die `styles.css` hinzu.
   </body>
 </html>
 ```
+
+Ok, nun erstelle eine `script.js` im Ordner Deiner `index.html` und füg folgenden Code hinzu.
 
 ```javascript
 function sagHallo() {
@@ -408,7 +412,7 @@ document.addEventListener("keydown", function (e) {
   }
 </style>
 
-<!-- Methode 3: External (separate Datei) -->
+<!-- Methode 3: External (separate Datei, empfohlen) -->
 <link rel="stylesheet" href="style.css" />
 ```
 
@@ -551,6 +555,9 @@ Class          = 10 Punkte     .meine-klasse
 Element        = 1 Punkt       div, p, h1
 ```
 
+Ein nerdiges Beispiel zum besseren lernen: [CSS Specisithity](https://stuffandnonsense.co.uk/specisithity)
+
+
 **Beispiel:**
 
 ```css
@@ -575,8 +582,8 @@ p {
 
 ```javascript
 // Moderne Variablen-Deklaration (immer nutzen!)
-let name = "Max"; // Veränderbar
-const alter = 25; // Konstant (nicht veränderbar)
+cont name = "Max"; // Konstant (nicht veränderbar)
+let alter = 25; // Veränderbar
 
 // Alt (nicht mehr nutzen!)
 var stadt = "Hamburg"; // Veraltet
@@ -822,76 +829,6 @@ about:robots         (Firefox Easter Egg)
 edge://surf          (Edge Surf-Game)
 ```
 
-### DevTools-Tricks
-
-Öffne die Browser-Console (F12 → Console) und probiere:
-
-```javascript
-// Seite auf den Kopf stellen
-document.body.style.transform = "rotate(180deg)";
-
-// Alle Bilder schwarz-weiß machen
-document.querySelectorAll("img").forEach((img) => {
-  img.style.filter = "grayscale(100%)";
-});
-
-// Alle Links lila färben
-document.querySelectorAll("a").forEach((link) => {
-  link.style.color = "purple";
-});
-
-// Matrix-Regen (schnell mehrmals ausführen!)
-setInterval(() => {
-  console.log(Math.random().toString(36).substring(7));
-}, 10);
-```
-
-## 🎯 Projektideen für danach
-
-### Anfänger
-
-1. **Portfolio-Seite** - Stelle dich vor
-2. **Landing Page** - Für ein fiktives Produkt
-3. **To-Do Liste** - Mit Add/Remove Funktionen
-4. **Taschenrechner** - Einfache Berechnungen
-
-### Fortgeschritten
-
-5. **Weather App** - Mit API-Integration
-6. **Quiz-App** - Multiple Choice mit Punktzählung
-7. **Memory-Spiel** - Karten aufdecken und merken
-8. **Blog** - Mit mehreren Seiten und Navigation
-
-### Challenge
-
-9. **Clone einer bekannten Website** - Lerne durch Nachbauen
-10. **Dein eigenes Tool** - Was würde DIR das Leben leichter machen?
-
----
-
-## 📞 Kontakt & Feedback
-
-**Dennis Lemm**
-
-- 📧 Fragen? Schreib mir!
-
----
-
-## 📝 Checkliste für dein nächstes Projekt
-
-- [ ] HTML-Grundstruktur erstellt
-- [ ] CSS eingebunden
-- [ ] Mindestens eine Überschrift (`<h1>`)
-- [ ] Mindestens ein Absatz (`<p>`)
-- [ ] Mindestens ein Bild (`<img>`)
-- [ ] Mindestens ein Button (`<button>`)
-- [ ] Button hat eine Funktion (JavaScript)
-- [ ] Farben und Schriftarten angepasst
-- [ ] Responsive (sieht auf Handy gut aus)
-- [ ] Im Browser getestet
-- [ ] Code ist kommentiert
-- [ ] **Stolz auf das Ergebnis!** 🎉
-
 ---
 
 ## 🚀 Abschließende Worte
@@ -909,7 +846,7 @@ Das Internet ist nicht mehr mysteriös – es sind einfach Dateien, die Computer
 **Was jetzt?**
 
 1. Experimentiere weiter mit deiner Website
-2. Schau dir Websites an, die du magst (Rechtsklick → Seitenquelltext)
+2. Schau dir Websites an, die du magst (Rechtsklick → Seitenquelltext oder in den Dev Tools)
 3. Baue etwas, das DIR Spaß macht
 
 Viel Erfolg auf deiner Reise! 🚀
