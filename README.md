@@ -46,7 +46,10 @@ curl wttr.in/Hamburg
 curl parrot.live
 ```
 
-**💡 Tipp:** Alle diese Befehle funktionieren im Terminal (Mac/Linux) oder der PowerShell/CMD (Windows)
+**💡 Tipp:** Alle diese Befehle funktionieren im Terminal (Mac/Linux).
+
+>[!WARNING]
+>Kopiere niemals einfach so Code aus dem Internet und führe ihn nicht ohne Kenntnis im Terminal aus!
 
 ---
 
