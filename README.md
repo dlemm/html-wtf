@@ -6,8 +6,8 @@
 
 ## Inhaltsverzeichnis
 
-1. [Terminal-Befehle zum Ausprobieren](#terminal-befehle-zum-ausprobieren-terminal-befehle)
-2. [Code-Beispiele zum Nachbauen](#code-beispiele-zum-nachbauen-code-beispiele)
+1. [Terminal-Befehle zum Ausprobieren](?tab=readme-ov-file#code-beispiele-zum-nachbauen)
+2. [Code-Beispiele zum Nachbauen](?tab=readme-ov-file#code-beispiele-zum-nachbauen-code-beispiele)
 3. [HTML Cheat Sheet](#html-cheat-sheet)
 4. [CSS Cheat Sheet](#css-cheat-sheet)
 5. [JavaScript Cheat Sheet](#javascript-cheat-sheet)
