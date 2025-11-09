@@ -8,9 +8,9 @@
 
 1. [Terminal-Befehle zum Ausprobieren](https://github.com/dlemm/html-wtf?tab=readme-ov-file#code-beispiele-zum-nachbauen)
 2. [Code-Beispiele zum Nachbauen](https://github.com/dlemm/html-wtf?tab=readme-ov-file#code-beispiele-zum-nachbauen)
-3. [HTML Cheat Sheet](#html-cheat-sheet)
-4. [CSS Cheat Sheet](#css-cheat-sheet)
-5. [JavaScript Cheat Sheet](#javascript-cheat-sheet)
+3. [HTML Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#html-cheat-sheet)
+4. [CSS Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#css-cheat-sheet-css-cheat-sheet)
+5. [JavaScript Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#-javascript-cheat-sheet)
 6. [Lernressourcen](#lernressourcen)
 
 ---
@@ -331,7 +331,7 @@ document.addEventListener("keydown", function (e) {
 
 ---
 
-## HTML Cheat Sheet {#html-cheat-sheet}
+## HTML Cheat Sheet
 
 ### Grundstruktur
 
@@ -394,7 +394,7 @@ document.addEventListener("keydown", function (e) {
 
 ---
 
-## CSS Cheat Sheet {#css-cheat-sheet}
+## CSS Cheat Sheet
 
 ### CSS einbinden
 
@@ -570,7 +570,7 @@ p {
 
 ---
 
-## ⚡ JavaScript Cheat Sheet {#javascript-cheat-sheet}
+## JavaScript Cheat Sheet
 
 ### Variablen
 
@@ -757,7 +757,7 @@ console.clear(); // Console leeren
 
 ---
 
-## Lernressourcen {#lernressourcen}
+## Lernressourcen
 
 ### Interaktive Tutorials
 
