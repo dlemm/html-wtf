@@ -48,8 +48,8 @@ curl parrot.live
 
 **💡 Tipp:** Alle diese Befehle funktionieren im Terminal (Mac/Linux).
 
->[!WARNING]
->Kopiere niemals einfach so Code aus dem Internet und führe ihn nicht ohne Kenntnis im Terminal aus!
+> [!WARNING]
+> Kopiere niemals einfach so Code aus dem Internet und führe ihn nicht ohne Kenntnis im Terminal aus!
 
 ---
 
@@ -221,7 +221,7 @@ Füge nun noch in Deiner `index.html` einen Verweis auf die `styles.css` hinzu.
 ### Stage 3: HTML + CSS + JavaScript (Jetzt wird's interaktiv!)
 
 Füge einen Link im `<head>` zu Deiner `script.js` hinzu, die wir gleich erstellen. Füge dann noch die Buttons am Ende der `html` file hinzu.
- 
+
 ```html
 <!DOCTYPE html>
 <html lang="de">
@@ -557,7 +557,6 @@ Element        = 1 Punkt       div, p, h1
 
 Ein nerdiges Beispiel zum besseren lernen: [CSS Specisithity](https://stuffandnonsense.co.uk/specisithity)
 
-
 **Beispiel:**
 
 ```css
@@ -803,6 +802,7 @@ console.clear(); // Console leeren
 | **GitHub Pages** | Kostenlos, für immer                        | [pages.github.com](https://pages.github.com)         |
 
 ### Communities & Support
+
 - **Reddit:** [r/webdev](https://www.reddit.com/r/webdev/), [r/learnprogramming](https://www.reddit.com/r/learnprogramming)
 - **Stack Overflow:** [stackoverflow.com](https://stackoverflow.com)
 
