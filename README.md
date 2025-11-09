@@ -7,7 +7,7 @@
 ## Inhaltsverzeichnis
 
 1. [Terminal-Befehle zum Ausprobieren](#terminal-befehle-zum-ausprobieren-terminal-befehle)
-2. [Code-Beispiele zum Nachbauen](#code-beispiele)
+2. [Code-Beispiele zum Nachbauen](#code-beispiele-zum-nachbauen-code-beispiele)
 3. [HTML Cheat Sheet](#html-cheat-sheet)
 4. [CSS Cheat Sheet](#css-cheat-sheet)
 5. [JavaScript Cheat Sheet](#javascript-cheat-sheet)
@@ -50,7 +50,7 @@ curl parrot.live
 
 ---
 
-## Code-Beispiele zum Nachbauen {#code-beispiele}
+## Code-Beispiele zum Nachbauen
 
 ### Stage 1: Nur HTML (Das Grundgerüst)
 
