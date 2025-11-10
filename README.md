@@ -97,6 +97,69 @@ Speichere diese Datei als `index.html`:
   ODER
 - Im Terminal `open index.html` (Mac)
 
+## HTML Cheat Sheet
+
+### Grundstruktur
+
+```html
+<!DOCTYPE html>
+<!-- Dokumenttyp-Deklaration -->
+<html lang="de">
+  <!-- HTML-Wurzelelement -->
+  <head>
+    <!-- Kopfbereich (unsichtbar) -->
+    <meta charset="UTF-8" />
+    <!-- Zeichenkodierung -->
+    <title>Titel</title>
+    <!-- Tab-Titel -->
+  </head>
+  <body>
+    <!-- Sichtbarer Inhalt -->
+    <!-- Hier kommt dein Content -->
+  </body>
+</html>
+```
+
+### Wichtige HTML-Tags
+
+| Tag               | Beschreibung                         | Beispiel                                  |
+| ----------------- | ------------------------------------ | ----------------------------------------- |
+| `<h1>` bis `<h6>` | Überschriften (1=größte, 6=kleinste) | `<h1>Hauptüberschrift</h1>`               |
+| `<p>`             | Absatz                               | `<p>Ein Textabsatz</p>`                   |
+| `<a>`             | Link                                 | `<a href="url">Text</a>`                  |
+| `<img>`           | Bild                                 | `<img src="bild.jpg" alt="Beschreibung">` |
+| `<button>`        | Button                               | `<button>Klick mich!</button>`            |
+| `<div>`           | Container (Block)                    | `<div>Inhalt</div>`                       |
+| `<span>`          | Container (Inline)                   | `<span>Text</span>`                       |
+| `<ul>`            | Ungeordnete Liste                    | `<ul><li>Punkt 1</li></ul>`               |
+| `<ol>`            | Geordnete Liste                      | `<ol><li>Punkt 1</li></ol>`               |
+| `<li>`            | Listen-Element                       | `<li>Listenpunkt</li>`                    |
+| `<br>`            | Zeilenumbruch                        | `Zeile 1<br>Zeile 2`                      |
+| `<hr>`            | Horizontale Linie                    | `<hr>`                                    |
+| `<strong>`        | Fetter Text                          | `<strong>Wichtig</strong>`                |
+| `<em>`            | Kursiver Text                        | `<em>Betont</em>`                         |
+
+### Wichtige Attribute
+
+```html
+<!-- ID (einzigartig pro Seite) -->
+<div id="meine-id">Content</div>
+
+<!-- Class (wiederverwendbar) -->
+<div class="meine-klasse">Content</div>
+
+<!-- Mehrere Klassen -->
+<div class="klasse1 klasse2 klasse3">Content</div>
+
+<!-- Style (Inline-CSS) -->
+<p style="color: red;">Roter Text</p>
+
+<!-- Event Handler -->
+<button onclick="meineFunction()">Klick</button>
+```
+
+---
+
 ### Stage 2: HTML + CSS (Jetzt wird's schön!)
 
 Speicher den folgenden Code im gleichen Folder wie bereits Deine `index.html` und nenne die Datei `styles.css`.
@@ -215,187 +278,6 @@ Füge nun noch in Deiner `index.html` einen Verweis auf die `styles.css` hinzu.
   </body>
 </html>
 ```
-
----
-
-### Stage 3: HTML + CSS + JavaScript (Jetzt wird's interaktiv!)
-
-Füge einen Link im `<head>` zu Deiner `script.js` hinzu, die wir gleich erstellen. Füge dann noch die Buttons am Ende der `html` file hinzu.
-
-```html
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meine erste Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <img src="https://picsum.photos/800/300" alt="Random" />
-    <h1>Willkommen auf meiner Website!</h1>
-    <p id="intro">
-      Ich bin [DEIN NAME] und das ist meine erste selbstgebaute Seite.
-    </p>
-
-    <h2>Über mich</h2>
-    <p>Ich lerne gerade Webentwicklung!</p>
-
-    <h2>Meine Interessen</h2>
-    <ul>
-      <li>Webdesign</li>
-      <li>Programmieren</li>
-      <li>Kreativität</li>
-    </ul>
-
-    <h2>Interaktive Features</h2>
-    <button onclick="sagHallo()">Sag Hallo! 👋</button>
-    <button onclick="changeColor()">Farbe ändern 🎨</button>
-    <button onclick="changeImage()">Neues Bild 🖼️</button>
-
-    <p id="counter">Geklickt: 0 mal</p>
-    <button onclick="countClicks()">Zähler erhöhen ➕</button>
-  </body>
-</html>
-```
-
-Ok, nun erstelle eine `script.js` im Ordner Deiner `index.html` und füg folgenden Code hinzu.
-
-```javascript
-function sagHallo() {
-  let name = prompt("Wie heißt du?");
-  if (name) {
-    alert("Hey " + name + "! Willkommen auf d/meiner Website!");
-    document.getElementById("intro").textContent =
-      "Hallo " + name + "! Schön, dass du hier bist!";
-  }
-}
-
-// Funktion 2: Hintergrundfarbe ändern
-function changeColor() {
-  const colors = [
-    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-    "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-    "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
-  ];
-
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  document.body.style.background = randomColor;
-}
-
-// Funktion 3: Neues zufälliges Bild laden
-function changeImage() {
-  const img = document.querySelector("img");
-  const randomId = Math.floor(Math.random() * 1000);
-  img.src = "https://picsum.photos/800/300?random=" + randomId;
-}
-
-// Funktion 4: Click-Counter
-let clickCount = 0;
-function countClicks() {
-  clickCount++;
-  document.getElementById("counter").textContent =
-    "Geklickt: " + clickCount + " mal 🎯";
-
-  // Easter Egg bei 10 Klicks
-  if (clickCount === 10) {
-    alert("Wow! Du hast 10 mal geklickt! Du bist ein Klick-Champion!");
-  }
-}
-
-// Bonus: Tastatur-Event (Easter Egg)
-let konamiCode = [];
-const konamiSequence = [
-  "ArrowUp",
-  "ArrowUp",
-  "ArrowDown",
-  "ArrowDown",
-  "ArrowLeft",
-  "ArrowRight",
-  "ArrowLeft",
-  "ArrowRight",
-  "b",
-  "a",
-];
-
-document.addEventListener("keydown", function (e) {
-  konamiCode.push(e.key);
-  konamiCode = konamiCode.slice(-10);
-
-  if (konamiCode.join(",") === konamiSequence.join(",")) {
-    alert("🎮 Konami Code aktiviert! Easter Egg gefunden");
-  }
-});
-```
-
----
-
-## HTML Cheat Sheet
-
-### Grundstruktur
-
-```html
-<!DOCTYPE html>
-<!-- Dokumenttyp-Deklaration -->
-<html lang="de">
-  <!-- HTML-Wurzelelement -->
-  <head>
-    <!-- Kopfbereich (unsichtbar) -->
-    <meta charset="UTF-8" />
-    <!-- Zeichenkodierung -->
-    <title>Titel</title>
-    <!-- Tab-Titel -->
-  </head>
-  <body>
-    <!-- Sichtbarer Inhalt -->
-    <!-- Hier kommt dein Content -->
-  </body>
-</html>
-```
-
-### Wichtige HTML-Tags
-
-| Tag               | Beschreibung                         | Beispiel                                  |
-| ----------------- | ------------------------------------ | ----------------------------------------- |
-| `<h1>` bis `<h6>` | Überschriften (1=größte, 6=kleinste) | `<h1>Hauptüberschrift</h1>`               |
-| `<p>`             | Absatz                               | `<p>Ein Textabsatz</p>`                   |
-| `<a>`             | Link                                 | `<a href="url">Text</a>`                  |
-| `<img>`           | Bild                                 | `<img src="bild.jpg" alt="Beschreibung">` |
-| `<button>`        | Button                               | `<button>Klick mich!</button>`            |
-| `<div>`           | Container (Block)                    | `<div>Inhalt</div>`                       |
-| `<span>`          | Container (Inline)                   | `<span>Text</span>`                       |
-| `<ul>`            | Ungeordnete Liste                    | `<ul><li>Punkt 1</li></ul>`               |
-| `<ol>`            | Geordnete Liste                      | `<ol><li>Punkt 1</li></ol>`               |
-| `<li>`            | Listen-Element                       | `<li>Listenpunkt</li>`                    |
-| `<br>`            | Zeilenumbruch                        | `Zeile 1<br>Zeile 2`                      |
-| `<hr>`            | Horizontale Linie                    | `<hr>`                                    |
-| `<strong>`        | Fetter Text                          | `<strong>Wichtig</strong>`                |
-| `<em>`            | Kursiver Text                        | `<em>Betont</em>`                         |
-
-### Wichtige Attribute
-
-```html
-<!-- ID (einzigartig pro Seite) -->
-<div id="meine-id">Content</div>
-
-<!-- Class (wiederverwendbar) -->
-<div class="meine-klasse">Content</div>
-
-<!-- Mehrere Klassen -->
-<div class="klasse1 klasse2 klasse3">Content</div>
-
-<!-- Style (Inline-CSS) -->
-<p style="color: red;">Roter Text</p>
-
-<!-- Event Handler -->
-<button onclick="meineFunction()">Klick</button>
-```
-
----
 
 ## CSS Cheat Sheet
 
@@ -574,6 +456,120 @@ p {
 → Grün gewinnt!
 
 ---
+
+### Stage 3: HTML + CSS + JavaScript (Jetzt wird's interaktiv!)
+
+Füge einen Link im `<head>` zu Deiner `script.js` hinzu, die wir gleich erstellen. Füge dann noch die Buttons am Ende der `html` file hinzu.
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine erste Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <img src="https://picsum.photos/800/300" alt="Random" />
+    <h1>Willkommen auf meiner Website!</h1>
+    <p id="intro">
+      Ich bin [DEIN NAME] und das ist meine erste selbstgebaute Seite.
+    </p>
+
+    <h2>Über mich</h2>
+    <p>Ich lerne gerade Webentwicklung!</p>
+
+    <h2>Meine Interessen</h2>
+    <ul>
+      <li>Webdesign</li>
+      <li>Programmieren</li>
+      <li>Kreativität</li>
+    </ul>
+
+    <h2>Interaktive Features</h2>
+    <button onclick="sagHallo()">Sag Hallo! 👋</button>
+    <button onclick="changeColor()">Farbe ändern 🎨</button>
+    <button onclick="changeImage()">Neues Bild 🖼️</button>
+
+    <p id="counter">Geklickt: 0 mal</p>
+    <button onclick="countClicks()">Zähler erhöhen ➕</button>
+  </body>
+</html>
+```
+
+Ok, nun erstelle eine `script.js` im Ordner Deiner `index.html` und füg folgenden Code hinzu.
+
+```javascript
+function sagHallo() {
+  let name = prompt("Wie heißt du?");
+  if (name) {
+    alert("Hey " + name + "! Willkommen auf d/meiner Website!");
+    document.getElementById("intro").textContent =
+      "Hallo " + name + "! Schön, dass du hier bist!";
+  }
+}
+
+// Funktion 2: Hintergrundfarbe ändern
+function changeColor() {
+  const colors = [
+    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
+  ];
+
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.background = randomColor;
+}
+
+// Funktion 3: Neues zufälliges Bild laden
+function changeImage() {
+  const img = document.querySelector("img");
+  const randomId = Math.floor(Math.random() * 1000);
+  img.src = "https://picsum.photos/800/300?random=" + randomId;
+}
+
+// Funktion 4: Click-Counter
+let clickCount = 0;
+function countClicks() {
+  clickCount++;
+  document.getElementById("counter").textContent =
+    "Geklickt: " + clickCount + " mal 🎯";
+
+  // Easter Egg bei 10 Klicks
+  if (clickCount === 10) {
+    alert("Wow! Du hast 10 mal geklickt! Du bist ein Klick-Champion!");
+  }
+}
+
+// Bonus: Tastatur-Event (Easter Egg)
+let konamiCode = [];
+const konamiSequence = [
+  "ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a",
+];
+
+document.addEventListener("keydown", function (e) {
+  konamiCode.push(e.key);
+  konamiCode = konamiCode.slice(-10);
+
+  if (konamiCode.join(",") === konamiSequence.join(",")) {
+    alert("🎮 Konami Code aktiviert! Easter Egg gefunden");
+  }
+});
+```
 
 ## JavaScript Cheat Sheet
 
