@@ -109,7 +109,7 @@ Speicher den folgenden Code im gleichen Folder wie bereits Deine `index.html` un
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px;
   margin: 0;
   color: white;
