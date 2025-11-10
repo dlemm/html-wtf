@@ -6,7 +6,7 @@
 
 ## Inhaltsverzeichnis
 
-1. [Terminal-Befehle zum Ausprobieren](https://github.com/dlemm/html-wtf?tab=readme-ov-file#code-beispiele-zum-nachbauen)
+1. [Terminal-Befehle zum Ausprobieren](#code-beispiele-zum-nachbauen)
 2. [Code-Beispiele zum Nachbauen](https://github.com/dlemm/html-wtf?tab=readme-ov-file#code-beispiele-zum-nachbauen)
 3. [HTML Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#html-cheat-sheet)
 4. [CSS Cheat Sheet](https://github.com/dlemm/html-wtf?tab=readme-ov-file#css-cheat-sheet)
