@@ -581,7 +581,7 @@ p {
 
 ```javascript
 // Moderne Variablen-Deklaration (immer nutzen!)
-cont name = "Max"; // Konstant (nicht veränderbar)
+const name = "Max"; // Konstant (nicht veränderbar)
 let alter = 25; // Veränderbar
 
 // Alt (nicht mehr nutzen!)
